@@ -1,0 +1,23 @@
+.signin .twitter_signin{
+	display:inline-block;
+	height:42px;
+	padding-right:51px;
+	padding-left: 55px;
+	color:white;
+	line-height:45px;
+	letter-spacing:1px;
+	text-align:center;
+	background-image:url(/static/images/twitter-bird.png);
+	background-color:#00aced;
+	background-repeat:no-repeat;
+	background-position:26px center;
+	-webkit-transition: all 500ms ease 0s;
+	-moz-transition: all 500ms ease 0s;
+	-ms-transition: all 500ms ease 0s;
+	-o-transition: all 500ms ease 0s;
+}
+
+.signin a.twitter_signin:hover{
+    background-color:#0493BF;
+    text-decoration:none;
+}
