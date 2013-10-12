@@ -7,7 +7,13 @@ A simple Flask app for performing Twitter OAuth with Python Flask
 1. Install all the necessary packages (best done inside of a virtual environment)
 > pip install -r requirements.txt
 
-2. Make sure 'mongod' is installed and running - http://docs.mongodb.org/manual/installation/ (needed only for storing CONSUMER_KEY and CONSUMER_SECRET, if you're saving it in some other way then there is no need for this). 
+2. Get your Twitter app keys (https://dev.twitter.com/apps) and add CONSUMER_KEY and CONSUMER_SECRET to your ~/.bashrc file
+```
+export CONSUMER_KEY=<your_twitter_app_key> 
+export CONSUMER_SECRET=<your_twitter_app_secret>
+```
+and reload
+> . ~/.bashrc
 
 3. Run the app
 > python runserver.py
