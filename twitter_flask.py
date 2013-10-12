@@ -18,15 +18,7 @@ c = MongoClient()
 
 app = Flask(__name__)
 
-#-----------------------------------
-# using MongoDB for storing data
-# assumes that the consumer key/secret is in MongoDB
-
-twitter_auth = c[DB_NAME]
-twitter_app = twitter_auth.apps.find_one({'app_name':APP_NAME})
-
-CONSUMER_KEY = str(twitter_app['consumer_key'])
-CONSUMER_SECRET = str(twitter_app['consumer_secret'])
+from config import CONSUMER_KEY, CONSUMER_SECRET
 
 session = dict()
 db = dict()
