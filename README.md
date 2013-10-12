@@ -1,4 +1,4 @@
-# Twitter-Flask
+# twitter-flask
 
 A simple Flask app for performing Twitter OAuth with Python Flask
 
@@ -23,5 +23,5 @@ If all goes well, you should see the example Twitter connect option at http://lo
 
 ### Author(s) 
 
-Muneeb Ali | http://muneeb.org
+Muneeb Ali | http://muneeb.org  
 Code modified from: Tweepy docs and http://github.com/whichlight/flask-tweepy-oauth
