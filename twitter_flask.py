@@ -9,16 +9,12 @@
 
 from flask import Flask, render_template, request
 import flask 
-
-from config import DB_NAME, APP_NAME, CALLBACK_URL
-import tweepy
-from pymongo import MongoClient
-
-c = MongoClient()
-
 app = Flask(__name__)
 
+from config import DB_NAME, APP_NAME, CALLBACK_URL
 from config import CONSUMER_KEY, CONSUMER_SECRET
+
+import tweepy
 
 session = dict()
 db = dict()
